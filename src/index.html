@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>CoctailSearch</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" 
+      rel="stylesheet"
+      >
+
+    <link rel="stylesheet" href="./scss/main.scss" />
+    <link rel="icon" href="./images/locococtail.png" />
+  </head>
+
+  <body class="body">
+
+  <header class="header">
+
+    <h1 class="header_h1">Buscador de cócteles</h1>
+    <p class="header_p">Descrube una larga lista de cócteles y añade los que más te gusten a favoritos para no perderlos nunca</p>
+
+  </header>
+    
+
+    <main class="main">
+
+    <section class="searchArea">
+
+      <input type="text" class="search js_search" placeholder="Ej: Mojito" value=""/>
+
+
+      <input
+          class="filter js-btn-search"
+          type="button"
+          value="Buscar"
+      />
+
+      <input 
+          class="filter js_reset" 
+          type="button"  
+          value="Reset"
+        />
+
+    </section>
+
+    <section class="drinksList">
+
+      <div class="favList">
+        <h5 class="favList_h5">Listado de cócteles favoritos</h5>
+        <ul class="favList_ul js_coctails_favorite"></ul>
+        <input 
+          class="btnFavReset js_reset_favorites hidden" 
+          type="button"  
+          value="Reset Favorites"
+        />
+      </div>  
+
+      <div class="coctailsList">
+        <h5 class="coctailsList_h5">Listado de cócteles</h5>
+        <ul class="coctailsList_ul js_coctails"></ul>
+      </div>
+
+    </section>
+    
+
+    </main>
+
+    </div>
+
+    <footer class="footer">
+        <p class="footer_license">Elena Alcaraz ©2024</p>
+        <img class="footer_logo" src="./images/logo-coctail.png" alt="Logo Coctail">
+    </footer>
+  
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
