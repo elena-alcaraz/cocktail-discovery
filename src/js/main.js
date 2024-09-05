@@ -26,12 +26,6 @@ function search () {
 };
 buttonSearch.addEventListener('click', search);
 
-inputSearch.addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') { 
-        search(); 
-    }
-});
-
 //Función para resetear la lista genérica
 function reset () {
     inputSearch.value = '';
